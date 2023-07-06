@@ -8,12 +8,12 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Trees(props) {
   const { nodes, materials } = useGLTF(
-    'http://localhost:5173/models/trees_and_clouds-transformed.glb'
+    'https://master--snazzy-pastelito-85935c.netlify.app/models/trees_and_clouds-transformed.glb'
   )
   return (
     <group {...props} dispose={null}>
       <group
-        position={[-0.04, 1.00, -4.22]}
+        position={[-0.04, 1.0, -4.22]}
         rotation={[Math.PI, 0.52, 0]}
         scale={[0.17, 0.12, 0.17]}
       >
@@ -131,4 +131,6 @@ export default function Trees(props) {
   )
 }
 
-useGLTF.preload('http://localhost:5173/models/trees_and_clouds-transformed.glb')
+useGLTF.preload(
+  'https://master--snazzy-pastelito-85935c.netlify.app/models/trees_and_clouds-transformed.glb'
+)

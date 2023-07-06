@@ -9,7 +9,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 export default function Flamingo(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF(
-    'http://localhost:5173/models/Flamingo_02-transformed.glb'
+    'https://master--snazzy-pastelito-85935c.netlify.app/models/Flamingo_02-transformed.glb'
   )
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
@@ -24,8 +24,6 @@ export default function Flamingo(props) {
     <group ref={group} {...props} dispose={null}>
       <group name="Scene">
         <mesh
-          castShadow
-          receiveShadow
           name="wheels"
           geometry={nodes.wheels.geometry}
           material={materials['Skateboard 80x20']}
@@ -34,8 +32,6 @@ export default function Flamingo(props) {
           scale={0.69}
         />
         <mesh
-          castShadow
-          receiveShadow
           name="skateboard"
           geometry={nodes.skateboard.geometry}
           material={materials['Skateboard 80x20']}
@@ -44,8 +40,6 @@ export default function Flamingo(props) {
           scale={0.69}
         >
           <mesh
-            castShadow
-            receiveShadow
             name="Wheels_Base"
             geometry={nodes.Wheels_Base.geometry}
             material={materials['Skateboard 80x20']}
@@ -53,8 +47,6 @@ export default function Flamingo(props) {
           />
         </mesh>
         <mesh
-          castShadow
-          receiveShadow
           name="wheels2"
           geometry={nodes.wheels2.geometry}
           material={materials['Skateboard 80x20']}
@@ -69,8 +61,6 @@ export default function Flamingo(props) {
           scale={1.99}
         >
           <mesh
-            castShadow
-            receiveShadow
             name="falmingo"
             geometry={nodes.falmingo.geometry}
             material={materials.Pink}
@@ -78,8 +68,6 @@ export default function Flamingo(props) {
             morphTargetInfluences={nodes.falmingo.morphTargetInfluences}
           />
           <mesh
-            castShadow
-            receiveShadow
             name="falmingo_1"
             geometry={nodes.falmingo_1.geometry}
             material={materials.Black}
@@ -87,8 +75,6 @@ export default function Flamingo(props) {
             morphTargetInfluences={nodes.falmingo_1.morphTargetInfluences}
           />
           <mesh
-            castShadow
-            receiveShadow
             name="falmingo_2"
             geometry={nodes.falmingo_2.geometry}
             material={materials.Orange}
@@ -96,8 +82,6 @@ export default function Flamingo(props) {
             morphTargetInfluences={nodes.falmingo_2.morphTargetInfluences}
           />
           <mesh
-            castShadow
-            receiveShadow
             name="falmingo_3"
             geometry={nodes.falmingo_3.geometry}
             material={materials.White}
@@ -110,4 +94,6 @@ export default function Flamingo(props) {
   )
 }
 
-useGLTF.preload('http://localhost:5173/models/Flamingo_02-transformed.glb')
+useGLTF.preload(
+  'https://master--snazzy-pastelito-85935c.netlify.app/models/Flamingo_02-transformed.glb'
+)
