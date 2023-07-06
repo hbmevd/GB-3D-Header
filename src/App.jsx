@@ -1,22 +1,15 @@
-import { memo, useRef, useState, Suspense } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import { memo, Suspense } from 'react'
+import { Canvas } from '@react-three/fiber'
 import {
-  OrbitControls,
   Sparkles,
   AccumulativeShadows,
   RandomizedLight,
 } from '@react-three/drei'
-import { useThree } from '@react-three/fiber'
 import { Rocket } from './assets/Laptop_and_rocket'
 import Trees from './assets/Trees_and_clouds'
 import Camera from './assets/Camera'
 import Flamingo from './assets/Flamingo_02'
-import {
-  Environment,
-  ContactShadows,
-  Grid,
-  PerspectiveCamera,
-} from '@react-three/drei'
+import { Environment, Grid } from '@react-three/drei'
 import CameraRig from './assets/CameraRig'
 import { ACESFilmicToneMapping } from 'three'
 
