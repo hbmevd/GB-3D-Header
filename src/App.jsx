@@ -68,7 +68,7 @@ export default function App() {
         background
         rotation={1}
         blur={0.6}
-        files="http://localhost:5173/peppermint_powerplant_2_1k.hdr"
+        files="https://master--snazzy-pastelito-85935c.netlify.app/peppermint_powerplant_2_1k.hdr"
       />
       <Suspense>
         <group rotation={[0, (-35 * Math.PI) / 180, 0]} position={[2, 0, 0]}>
