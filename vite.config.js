@@ -15,11 +15,12 @@ export default defineConfig({
   build: {
     minify: true,
     manifest: true,
+    outDir: 'build',
     rollupOptions: {
       input: "./src/main.jsx",
       output: {
         format: "umd",
-        entryFileNames: "main.jsx",
+        entryFileNames: "main.js",
         esModule: false,
         compact: true,
         globals: {
