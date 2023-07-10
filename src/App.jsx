@@ -67,7 +67,14 @@ export default function App() {
         <group rotation={[0, (-35 * Math.PI) / 180, 0]} position={[2, 0, 0]}>
           <Rocket />
           <Trees />
-
+          <Flamingo />
+          <Sparkles
+            count={100}
+            scale={6}
+            size={3}
+            speed={0.2}
+            position={[0, 0, -4]}
+          />
         </group>
       </Suspense>
       <CameraRig>
