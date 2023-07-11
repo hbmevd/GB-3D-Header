@@ -138,25 +138,6 @@ export default function App() {
             speed={0.2}
             position={[0, 0, -4]}
           />
-          <AccumulativeShadows
-            temporal
-            frames={100}
-            color="orange"
-            colorBlend={2}
-            toneMapped={true}
-            alphaTest={0.9}
-            opacity={2}
-            scale={12}
-          >
-            <RandomizedLight
-              amount={8}
-              radius={4}
-              ambient={0.5}
-              intensity={1}
-              position={[5, 5, -10]}
-              bias={0.001}
-            />
-          </AccumulativeShadows>
         </group>
       </Suspense>
       <CameraRig>
@@ -174,14 +155,34 @@ export default function App() {
         sectionColor={[5, 5, 0]}
         fadeDistance={30}
       />
-      <EffectComposer>
+
+      <AccumulativeShadows
+        temporal
+        frames={100}
+        color="orange"
+        colorBlend={2}
+        toneMapped={true}
+        alphaTest={0.9}
+        opacity={2}
+        scale={12}
+      >
+        <RandomizedLight
+          amount={8}
+          radius={4}
+          ambient={0.5}
+          intensity={1}
+          position={[5, 5, -10]}
+          bias={0.001}
+        />
+      </AccumulativeShadows>
+{/*       <EffectComposer>
         <DepthOfField
           target={[0, -2.6, 12]}
           focusRange={0.003}
           bokehScale={3}
         />
         <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={200} />
-      </EffectComposer>
+      </EffectComposer> */}
     </Canvas>
   )
 }
