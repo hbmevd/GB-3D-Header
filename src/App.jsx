@@ -95,18 +95,6 @@ export default function App() {
     onceLoadet.play()
   }
 
-  const Shadows = memo(() => (
-    <AccumulativeShadows
-      temporal
-      frames={100}
-      color="#9d4b4b"
-      colorBlend={0.5}
-      alphaTest={0.9}
-      scale={20}
-    >
-      <RandomizedLight amount={8} radius={4} position={[5, 5, -10]} />
-    </AccumulativeShadows>
-  ))
   return (
     <Canvas
       shadows
@@ -167,7 +155,16 @@ export default function App() {
         sectionColor={[5, 5, 0]}
         fadeDistance={30}
       />
-      <Shadows />
+      <AccumulativeShadows
+        temporal
+        frames={100}
+        color="#9d4b4b"
+        colorBlend={0.5}
+        alphaTest={0.9}
+        scale={20}
+      >
+        <RandomizedLight amount={8} radius={4} position={[5, 5, -10]} />
+      </AccumulativeShadows>
       <EffectComposer disableNormalPass>
         <DepthOfField
           target={[0, -2.6, 12]}
