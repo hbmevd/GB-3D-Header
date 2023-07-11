@@ -13,7 +13,6 @@ import { Environment, Grid } from '@react-three/drei'
 import CameraRig from './assets/CameraRig'
 import { ACESFilmicToneMapping } from 'three'
 
-
 import {
   Bloom,
   DepthOfField,
@@ -21,8 +20,6 @@ import {
 } from '@react-three/postprocessing'
 
 export default function App() {
-
-
   return (
     <Canvas
       shadows
@@ -56,9 +53,9 @@ export default function App() {
       />
       <Suspense>
         <group rotation={[0, (-35 * Math.PI) / 180, 0]} position={[2, 0, 0]}>
-          <Rocket />
-{/*           <Trees /> */}
-{/*           <Flamingo /> */}
+          {/*           <Rocket /> */}
+          <Trees />
+          <Flamingo />
           <Sparkles
             count={100}
             scale={6}
