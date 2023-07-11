@@ -7,7 +7,6 @@ import gsap from 'gsap'
 let onceLoadet = gsap.timeline({ paused: true })
 onceLoadet
   .set('.loading-transition-wrapper', { opacity: 0, display: 'none' })
-  .to('.blur-filter', { backdropFilter: 'blur(0px)', duration: 2 })
 
 function playLoadingAnimation() {
   gsap.set('.loading-transition-wrapper', { display: 'block' })
