@@ -92,7 +92,7 @@ export default function App() {
         sectionColor={[5, 5, 0]}
         fadeDistance={30}
       />
-      <Shadows />
+{/*       <Shadows /> */}
       <EffectComposer disableNormalPass>
         <DepthOfField
           target={[0, -2.6, 12]}
