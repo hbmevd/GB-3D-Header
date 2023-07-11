@@ -138,6 +138,25 @@ export default function App() {
             speed={0.2}
             position={[0, 0, -4]}
           />
+          <AccumulativeShadows
+            temporal
+            frames={100}
+            color="orange"
+            colorBlend={2}
+            toneMapped={true}
+            alphaTest={0.9}
+            opacity={2}
+            scale={12}
+          >
+            <RandomizedLight
+              amount={8}
+              radius={4}
+              ambient={0.5}
+              intensity={1}
+              position={[5, 5, -10]}
+              bias={0.001}
+            />
+          </AccumulativeShadows>
         </group>
       </Suspense>
       <CameraRig>
@@ -155,17 +174,7 @@ export default function App() {
         sectionColor={[5, 5, 0]}
         fadeDistance={30}
       />
-      <AccumulativeShadows
-        temporal
-        frames={100}
-        color="#9d4b4b"
-        colorBlend={0.5}
-        alphaTest={0.9}
-        scale={20}
-      >
-        <RandomizedLight amount={8} radius={4} position={[5, 5, -10]} />
-      </AccumulativeShadows>
-      <EffectComposer disableNormalPass>
+      <EffectComposer>
         <DepthOfField
           target={[0, -2.6, 12]}
           focusRange={0.003}
