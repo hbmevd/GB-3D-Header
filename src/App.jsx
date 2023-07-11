@@ -90,14 +90,14 @@ export default function App() {
       >
         <RandomizedLight amount={8} radius={4} position={[5, 5, -10]} />
       </AccumulativeShadows>
-      {/*       <EffectComposer disableNormalPass>
+      <EffectComposer disableNormalPass>
         <DepthOfField
           target={[0, -2.6, 12]}
           focusRange={0.003}
           bokehScale={3}
         />
         <Bloom luminanceThreshold={0.7} luminanceSmoothing={0.9} height={200} />
-      </EffectComposer> */}
+      </EffectComposer>
     </Canvas>
   )
 }
