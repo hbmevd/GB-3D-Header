@@ -53,7 +53,7 @@ export default function App() {
       />
       <Suspense>
         <group rotation={[0, (-35 * Math.PI) / 180, 0]} position={[2, 0, 0]}>
-          {/*           <Rocket /> */}
+          <Rocket />
           <Trees />
           <Flamingo />
           <Sparkles
