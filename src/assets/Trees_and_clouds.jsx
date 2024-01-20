@@ -3,7 +3,7 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Trees(props) {
   const { nodes, materials } = useGLTF(
-    'https://master--snazzy-pastelito-85935c.netlify.app/models/trees_and_clouds-transformed.glb'
+    'http://localhost:5173/models/trees_and_clouds-transformed.glb'
   )
   return (
     <group {...props} dispose={null}>
@@ -127,5 +127,5 @@ export default function Trees(props) {
 }
 
 useGLTF.preload(
-  'https://master--snazzy-pastelito-85935c.netlify.app/models/trees_and_clouds-transformed.glb'
+  'http://localhost:5173/models/trees_and_clouds-transformed.glb'
 )

@@ -4,7 +4,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 export default function Flamingo(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF(
-    'https://master--snazzy-pastelito-85935c.netlify.app/models/Flamingo_02-transformed.glb'
+    'http://localhost:5173/models/Flamingo_02-transformed.glb'
   )
   const { actions } = useAnimations(animations, group)
   useEffect(() => {
@@ -90,5 +90,5 @@ export default function Flamingo(props) {
 }
 
 useGLTF.preload(
-  'https://master--snazzy-pastelito-85935c.netlify.app/models/Flamingo_02-transformed.glb'
+  'http://localhost:5173/models/Flamingo_02-transformed.glb'
 )

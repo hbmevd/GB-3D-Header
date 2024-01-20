@@ -5,7 +5,7 @@ import { useFrame } from '@react-three/fiber'
 
 export function Rocket(props) {
   const { nodes, materials } = useGLTF(
-    'https://master--snazzy-pastelito-85935c.netlify.app/models/laptop_and_rocket-transformed.glb'
+    'http://localhost:5173/models/laptop_and_rocket-transformed.glb'
   )
 
   const pointer = useRef({ x: 0, y: 0 })
@@ -170,5 +170,5 @@ export function Rocket(props) {
 }
 
 useGLTF.preload(
-  'https://master--snazzy-pastelito-85935c.netlify.app/models/laptop_and_rocket-transformed.glb'
+  'http://localhost:5173/models/laptop_and_rocket-transformed.glb'
 )
