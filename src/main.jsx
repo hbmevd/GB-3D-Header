@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client'
 import './styles.css'
 import App from './App'
 import gsap from 'gsap'
+import FeatureTest from './FeatureTest'
 
 // LOADING ANIMATION
 let onceLoadet = gsap.timeline({ paused: true })
