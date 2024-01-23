@@ -34,7 +34,7 @@ export default function CameraRig({ children }) {
     easing.dampE(
       group.current.rotation,
       [pointer.current.y / 30, pointer.current.x / 5, 0],
-      0.85,
+      0.001,
       delta
     )
   })
