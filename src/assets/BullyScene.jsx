@@ -8,7 +8,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function BullyScene(props) {
-  const { nodes, materials } = useGLTF('http://localhost:5173/public/models/BullyScene.glb')
+  const { nodes, materials } = useGLTF('https://master--effortless-caramel-ffd67a.netlify.app/models/BullyScene.glb')
   return (
     <group {...props} dispose={null}>
       <mesh castShadow receiveShadow geometry={nodes.Top_Teeth001.geometry} material={materials['Teeth.001']} position={[0.009, -0.015, 0.044]} scale={0.079} />
@@ -20,4 +20,4 @@ export function BullyScene(props) {
   )
 }
 
-useGLTF.preload('http://localhost:5173/public/models/BullyScene.glb')
+useGLTF.preload('https://master--effortless-caramel-ffd67a.netlify.app/models/BullyScene.glb')

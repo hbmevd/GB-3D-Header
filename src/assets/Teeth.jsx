@@ -8,7 +8,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function Teeth(props) {
-  const { nodes, materials } = useGLTF('http://localhost:5173/public/models/Teeth.glb')
+  const { nodes, materials } = useGLTF('https://master--effortless-caramel-ffd67a.netlify.app/models/Teeth.glb')
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Tongue001.geometry} material={materials['Material.004']} />
@@ -16,4 +16,4 @@ export function Teeth(props) {
   )
 }
 
-useGLTF.preload('http://localhost:5173/public/models/Teeth.glb')
+useGLTF.preload('https://master--effortless-caramel-ffd67a.netlify.app/models/Teeth.glb')

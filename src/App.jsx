@@ -53,7 +53,7 @@ export default function App() {
         background
         rotation={2}
         blur={0.5}
-        files="http://localhost:5173/public/images/whitehdr.hdr"
+        files="https://master--effortless-caramel-ffd67a.netlify.app/images/whitehdr.hdr"
       />
       <Suspense>
         <group rotation={[0, (35 * Math.PI) / 180, 0]} position={[0, 0, 0]}>

@@ -8,7 +8,7 @@ import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export function BullyNew(props) {
-  const { nodes, materials } = useGLTF('http://localhost:5173/public/models/bullynew.glb')
+  const { nodes, materials } = useGLTF('https://master--effortless-caramel-ffd67a.netlify.app/models/bullynew.glb')
   return (
     <group {...props} dispose={null}>
       <group position={[3.511, 0, 0]} scale={0.425}>
@@ -31,4 +31,4 @@ export function BullyNew(props) {
   )
 }
 
-useGLTF.preload('http://localhost:5173/public/models/bullynew.glb')
+useGLTF.preload('https://master--effortless-caramel-ffd67a.netlify.app/models/bullynew.glb')
